@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>wiki</title>
+        <link rel="stylesheet" href="/static/style.css" type="text/css">
+
+    </head>
+
+    <body>
+        <header>
+            <h1>Min wiki</h1>
+        </header>
+
+            <aside>
+                <a href="ny_artikel.html">
+                    <h2>Skapa en ny artikel</h2>
+                </a>
+            </aside>
+
+        <main>
+            <h2> Artiklar</h2>
+                    % for rubrik in filer:
+                <a href="/fakta/{{ rubrik['id'] }}">
+                    <h3>{{ rubrik['rubrik'] }}</h3>
+                </a>
+            % end
+        </main>
+    </body>
+</html>

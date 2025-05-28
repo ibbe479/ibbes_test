@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>wiki</title>
+        <link rel="stylesheet" href="/static/style.css" type="text/css">
+
+    </head>
+
+    <body>
+        <header>
+            <a href="/">
+                <h1>Min wiki</h1>
+            </a>    
+        </header>
+
+        <main>
+            <form action="/artikel" method="post" id="nytt"> 
+
+                <label for="titel">titeln</label>
+                <input type="text" id="titel" name="titel">
+
+                <label for="artikel">ny artikel</label>
+                <textarea id="artikel" name="artikel" placeholder="skriv din nya artikel här" rows="5"></textarea>
+
+                <input type="submit" value="spara ny artikel" id="btn">
+        </main>
+    </body>
+</html>
